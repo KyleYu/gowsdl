@@ -30,7 +30,7 @@ type SOAPEnvelopeResponse struct {
 
 type SOAPEnvelope struct {
 	XMLName xml.Name `xml:"soapenv:Envelope"`
-	XmlNS   string   `xml:"xmlns:soap,attr"`
+	XmlNS   string   `xml:"xmlns:soapenv,attr"`
 
 	Header *SOAPHeader
 	Body   SOAPBody
